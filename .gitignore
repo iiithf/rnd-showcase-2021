@@ -1,3 +1,10 @@
+## Output
+## ------
+*.mp4
+*.jpg
+*.png
+
+
 # Logs
 logs
 *.log
