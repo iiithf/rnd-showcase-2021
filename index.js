@@ -20,7 +20,8 @@ function readFile(pth) {
   return d.replace(/\r?\n/g, '\n');
 }
 
-function writeFile(pth, d) {
+function writeFile(pth, d, o={}) {
+  if (fs.existsSync(pth) && !o.overwrite) return;
   d = d.replace(/\r?\n/g, os.EOL);
   fs.writeFileSync(pth, d);
 }
@@ -58,8 +59,9 @@ function readDetails(body) {
   return a;
 }
 
-function downloadFile(url, nam) {
+function downloadFile(url, nam, o={}) {
   var filename = `${nam}${path.extname(url)}`;
+  if (fs.existsSync(filename) && !o.overwrite) return;
   cpExec(`curl -L "${url}" --output "${filename}"`);
 }
 
