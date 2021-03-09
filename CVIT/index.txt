@@ -1,0 +1,11 @@
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=Center%20for%20Visual%20Information%20Technology&shortform=CVIT&title_tech=Audio%20Keyword%20Spotting
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=Center%20for%20Visual%20Information%20Technology&shortform=CVIT&title_tech=The%20Interplay%20of%20Speech%20and%20Lip%20Movements
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=Center%20for%20Visual%20Information%20Technology&shortform=CVIT&title_tech=Exploring%20Genotype-phenotype%20relationships%20of%20Breast%20Cancer
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=Center%20for%20Visual%20Information%20Technology&shortform=CVIT&title_tech=Asking%20Questions%20on%20Images/Videos%20Containing%20Text
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=Center%20for%20Visual%20Information%20Technology&shortform=CVIT&title_tech=Understanding%20Deep%20Face%20Models%20through%20Canonical%20Saliency%20Maps
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=Center%20for%20Visual%20Information%20Technology&shortform=CVIT&title_tech=DGAZE:%20Driver%20Gaze%20Mapping%20on%20Road
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=Center%20for%20Visual%20Information%20Technology&shortform=CVIT&title_tech=Improving%20Word%20Recognition%20and%20Retrieval
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=Center%20for%20Visual%20Information%20Technology&shortform=CVIT&title_tech=PeeledHuman:%20Robust%20Shape%20Representation%20for%20Textured%203D%20Human%20Body%20Reconstruction
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=Center%20for%20Visual%20Information%20Technology&shortform=CVIT&title_tech=AFN:%20Attentional%20Feedback%20Network%20based%203D%20Terrain%20Super-Resolution
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=Center%20for%20Visual%20Information%20Technology&shortform=CVIT&title_tech=Table%20detection%20and%20recognition%20in%20document%20images
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=Center%20for%20Visual%20Information%20Technology&shortform=CVIT&title_tech=GlocalNet:%20Class-aware%20Long-term%20Human%20Motion%20Synthesis

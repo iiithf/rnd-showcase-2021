@@ -1,0 +1,9 @@
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=%20Healthcare%20in%20Artificial%20Intelligence&shortform=HAI&title_tech=LigGPT%20-%20Molecular%20Generation%20using%20a%20Transformer-%20Decoder%20Model
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=%20Healthcare%20in%20Artificial%20Intelligence&shortform=HAI&title_tech=DeepPocket%20-%20Ligand%20Binding%20Site%20Detection%20Using%20Convolutional%20Neural%20Networks
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=%20Healthcare%20in%20Artificial%20Intelligence&shortform=HAI&title_tech=MMBERT:%20Multimodal%20BERT%20for%20Improved%20Medical%20VQA
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=%20Healthcare%20in%20Artificial%20Intelligence&shortform=HAI&title_tech=Ayu:%20Characterization%20(Prediction)%20of%20Healthy%20Ageing%20from%20Neuroimaging%20Data
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=%20Healthcare%20in%20Artificial%20Intelligence&shortform=HAI&title_tech=PreHost:%20Host%20Prediction%20of%20Coronaviridae%20family%20using%20genomic%20sequences.
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=%20Healthcare%20in%20Artificial%20Intelligence&shortform=HAI&title_tech=ASD%20Classification%20using%20Static%20and%20Dynamic%20Functional%20Connectivity
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=%20Healthcare%20in%20Artificial%20Intelligence&shortform=HAI&title_tech=Deep%20Learning%20in%20Histopathology%20Whole%20Slide%20Images.
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=%20Healthcare%20in%20Artificial%20Intelligence&shortform=HAI&title_tech=Explainable%20Arrythmia%20Detection%20using%20Deep%20Learning
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=%20Healthcare%20in%20Artificial%20Intelligence&shortform=HAI&title_tech=Enhanced%20Sampling%20of%20Chemical%20Space%20for%20High%20Throughput%20Screening%20Applications%20using%20Machine%20Learning

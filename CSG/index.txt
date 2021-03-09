@@ -1,0 +1,8 @@
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=&shortform=CSG&title_tech=%20Accelerating%20Local%20laplacian%20Filters%20on%20FPGAs
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=&shortform=CSG&title_tech=Fpga%20accelerator%20for%20stereo%20vision%20using%20semi-global%20matching%20through%20dependency%20relaxation
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=&shortform=CSG&title_tech=TreeNet:%20An%20overlay%20architecture%20%20for%20%20vector%20%20reduction%20%20using%20%20a%20%20network%20%20of%20%20trees.
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=&shortform=CSG&title_tech=A%20overlay%20accelerator%20for%20CNN%20inference%20on%20fpgas%20with%20fine-grained%20flexible%20parallelism
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=&shortform=CSG&title_tech=FlowPix:%20An%20Image%20Processing%20DSL%20Based%20on%20an%20FPGA%20Overlay%20Accelerator
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=&shortform=CSG&title_tech=Accelerating%20LU%20Decompostion%20on%20fpgas
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=&shortform=CSG&title_tech=E-PODS:%20A%20Fast%20Heuristic%20for%20Data/Service%20Delivery%20in%20Vehicular%20Edge%20Computing
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=&shortform=CSG&title_tech=An%20Edge%20Bandwidth%20Cost%20Gradient-based%20Heuristic%20for%20Fast%20Data/Service%20Delivery%20to%20Connected%20Vehicles%20under%20Vehicle%20Overlaps

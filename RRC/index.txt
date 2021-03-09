@@ -1,0 +1,17 @@
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=Robotics%20Research%20Center&shortform=RRC&title_tech=Aerial%20Transportation%20of%20Unknown%20Payloads:%20Adaptive%20Path%20Tracking%20for%20Quadrotors
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=Robotics%20Research%20Center&shortform=RRC&title_tech=Robust%20Manoeuvring%20of%20Quadrotor%20under%20Constrained%20Space%20and%20Predefined%20Accuracy
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=Robotics%20Research%20Center&shortform=RRC&title_tech=DRACO:%20Dense%20Reconstruction%20And%20Canonicalization%20of%20Objects
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=Robotics%20Research%20Center&shortform=RRC&title_tech=Small%20Obstacle%20Detection
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=Robotics%20Research%20Center&shortform=RRC&title_tech=Aerial%20Manipulator
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=Robotics%20Research%20Center&shortform=RRC&title_tech=Real%20Time%20Static%20Obstacle%20Avoidance%20Outdoors
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=Robotics%20Research%20Center&shortform=RRC&title_tech=Deep%20Flow%20Guided%20Visual%20Servoing
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=Robotics%20Research%20Center&shortform=RRC&title_tech=A%20Multi-Output%20Differential%20controlled%20In-Pipe%20Climber%20robot
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=Robotics%20Research%20Center&shortform=RRC&title_tech=Multibody%20Monocular%20SLAM%20using%20Pose-Graph%20Optmizations
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=Robotics%20Research%20Center&shortform=RRC&title_tech=Topological%20Mapping%20for%20Manhattan-like%20Repetitive%20Environments
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=Robotics%20Research%20Center&shortform=RRC&title_tech=DeepMPCVS:%20Deep%20Model%20Predictive%20Control%20For%20Visual%20Servoing
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=Robotics%20Research%20Center&shortform=RRC&title_tech=Underwater%20Continuum%20Manipulator%20with%20Gripper
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=Robotics%20Research%20Center&shortform=RRC&title_tech=LIGHT%20WEIGHT%20HELICAL%20SMA%20ACTUATOR%20BASED%20ARTIFICIAL%20MUSCLE%20&%20ARM%20WITH%20SMC
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=Robotics%20Research%20Center&shortform=RRC&title_tech=Controlling%20Solar%20Sail%20Actuation%20in%20Outerspace
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=Robotics%20Research%20Center&shortform=RRC&title_tech=Cooperative%20Control%20and%20Collision%20Avoidance%20in%20Multi-UAV%20swarms
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=Robotics%20Research%20Center&shortform=RRC&title_tech=Person%20Following%20Robot
+https://rndshowcase.iiit.ac.in/tto/main1.php?centername=Robotics%20Research%20Center&shortform=RRC&title_tech=MPC%20%20based%20%20multi-target%20%20tracking%20%20using%20%20a%20%20swarm%20%20of%20%20fixed%20%20wing%20%20UAVs

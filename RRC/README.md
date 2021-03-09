@@ -1,0 +1,3 @@
+# Robotics Research Center
+
+Robotics Research Center (RRC) is internationally and nationally recognized for its contributions in the areas of robotic vision, ground and aerial robots and in design of novel robotic mechanisms. The center has significantly advanced the state of the art in the areas of understanding and reconstructing dynamic scenes with monocular and stereo cameras, vision guided perception and navigation for drones, trajectory planning, mechanism design and autonomous navigation in general.
