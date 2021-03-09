@@ -2,9 +2,11 @@ const fs = require('fs');
 const os = require('os')
 const cp = require('child_process');
 const path = require('path');
-const {JSDOM} = require('jsdom');
 const fetch = require('node-fetch');
+const {JSDOM} = require('jsdom');
+const imgur = require('imgur');
 
+const E = process.env;
 const stdio = [0, 1, 2];
 
 
@@ -49,20 +51,19 @@ function readDetails(body) {
   var div1 = body.querySelector('#div1');
   var videoUrl = div1.querySelector('video').getAttribute('src').trim();
   var posterUrl = div1.querySelector('a').getAttribute('href').trim();
-  var posterImg = div1.querySelector('img').getAttribute('src');
+  var posterImgUrl = div1.querySelector('img').getAttribute('src');
   var title = div1.querySelector('h3').textContent.replace(/[^\w\s,-]/g, ' - ').replace(/\s+/g, ' ').trim();
   var headings = [...div1.querySelectorAll('h4 b')].map(e => e.textContent.trim());
   var texts = [...div1.querySelectorAll('h5')].map(e => e.textContent.trim());
-  var a = {videoUrl, posterUrl, posterImg, title};
+  var a = {videoUrl, posterUrl, posterImgUrl, title};
   for (var i=0, I=headings.length; i<I; i++)
     a[headings[i]] = texts[i].replace(/[^ -~]/g, ' ').replace(/\s+/g, ' ');
   return a;
 }
 
-function downloadFile(url, nam, o={}) {
-  var filename = `${nam}${path.extname(url)}`;
-  if (fs.existsSync(filename) && !o.overwrite) return;
-  cpExec(`curl -L "${url}" --output "${filename}"`);
+function downloadFile(url, dst, o={}) {
+  if (fs.existsSync(dst) && !o.overwrite) return;
+  cpExec(`curl -L "${url}" --output "${dst}"`);
 }
 
 
@@ -79,7 +80,7 @@ function headingTxt(x, k) {
 
 function detailsMd(x) {
   var a = `# ${x.title}\n\n`;
-  a += `![](${x.posterImg})\n\n`;
+  a += `![](${x.posterImgUrl})\n\n`;
   a += `${x['Technology Description']}\n\n`;
   a += `[Poster](${x.posterUrl})\n`;
   a += `[Video](${x.videoUrl})\n\n<br>\n\n\n`;
@@ -114,20 +115,31 @@ async function main(pth) {
   var dir = path.dirname(pth);
   var urls = readFile(pth).trim().split('\n');
   var postfixTxt = readFile('postfix.txt');
+  imgur.setCredentials(E.IMGUR_USERNAME, E.IMGUR_PASSWORD, E.IMGUR_CLIENTID);
   process.chdir(dir);
   for (var i=0, I=urls.length; i<I; i++) {
     var id = String(i+1).padStart(2, '0');
     var body = await fetchBody(urls[i]);
     if (!body.querySelector('#div1 h3')) continue;
     var x = readDetails(body);
-    downloadFile(x.videoUrl, `${id}. ${x.title}`);
-    downloadFile(x.posterImg, `${id}. ${x.title}`);
-    downloadFile(x.posterUrl, `${id}. ${x.title}`);
-    x.posterUrl = encodeURIComponent(`${id}. ${x.title}${path.extname(x.posterUrl)}`);
-    x.posterImg = encodeURIComponent(`${id}. ${x.title}${path.extname(x.posterImg)}`);
-    writeFile(`${id}. ${x.title}.md`, detailsMd(x));
-    x.posterUrl = encodeURI(`https://github.com/iiithf/rnd-showcase-2021/blob/main/${dir}/${id}. ${x.title}.pdf`);
-    writeFile(`${id}. ${x.title}.log`, detailsTxt(x)+postfixTxt);
+
+    var videoPth = `${id}. ${x.title}${path.extname(x.videoUrl)}`;
+    var posterPth = `${id}. ${x.title}${path.extname(x.posterUrl)}`;
+    var posterImgPth = `${id}. ${x.title}${path.extname(x.posterImgUrl)}`;
+    var mdPth = `${id}. ${x.title}.md`;
+    var txtPth = `${id}. ${x.title}.log`;
+
+    downloadFile(x.videoUrl, videoPth);
+    downloadFile(x.posterImgUrl, posterPth);
+    downloadFile(x.posterUrl, posterImgPth);
+    // var a = await imgur.uploadFile(posterImgPth)
+    // console.log(posterImgPth, a);
+
+    x.posterUrl = encodeURIComponent(posterPth);
+    x.posterImgUrl = encodeURIComponent(posterImgPth);
+    writeFile(mdPth, detailsMd(x));
+    x.posterUrl = encodeURI(`https://github.com/iiithf/rnd-showcase-2021/blob/main/${dir}/${posterPth}`);
+    writeFile(txtPth, detailsTxt(x)+postfixTxt);
     console.log('\n\n');
   }
 }
