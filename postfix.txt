@@ -1,0 +1,12 @@
+
+
+---
+
+
+This was a virtual event (because of COVID-19, last year's event was cancelled) and the various working groups uploaded their poster PDFs, explanation videos to the portal. The idea behind this event is to inform the public of the research work being done at IIIT Hyderabad, and to form collaborations with industry in order to implement these into impactful projects. The work done by startups at IIITH is also included.
+
+Event: R&D Showcase, IIIT Hyderabad
+Date: 6 March, 2021
+
+Portal: https://portal-rndshowcase.iiit.ac.in/
+Repository: https://github.com/iiithf/rnd-showcase-2021

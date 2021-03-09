@@ -111,6 +111,7 @@ function detailsTxt(x) {
 async function main(pth) {
   var dir = path.dirname(pth);
   var urls = readFile(pth).trim().split('\n');
+  var postfixTxt = readFile('postfix.txt');
   process.chdir(dir);
   for (var i=0, I=urls.length; i<I; i++) {
     var id = String(i+1).padStart(2, '0');
@@ -122,7 +123,8 @@ async function main(pth) {
     x.posterUrl = encodeURIComponent(`${id}. ${x.title}${path.extname(x.posterUrl)}`);
     x.posterImg = encodeURIComponent(`${id}. ${x.title}${path.extname(x.posterImg)}`);
     writeFile(`${id}. ${x.title}.md`, detailsMd(x));
-    writeFile(`${id}. ${x.title}.log`, detailsTxt(x));
+    x.posterUrl = encodeURI(`https://github.com/iiithf/rnd-showcase-2021/blob/main/${dir}/${id}. ${x.title}.pdf`);
+    writeFile(`${id}. ${x.title}.log`, detailsTxt(x)+postfixTxt);
     console.log('\n\n');
   }
 }
