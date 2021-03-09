@@ -84,7 +84,7 @@ function detailsMd(x) {
   a += `[Poster](${x.posterUrl})\n`;
   a += `[Video](${x.videoUrl})\n\n<br>\n\n\n`;
   a += `### Faculty Name\n\n`
-  a += `${x['Faculty Name'].split(/,\s*|\s+and\s+/g).join(`<br>\n`)}\n\n\n`;
+  a += `${x['Faculty Name'].split(/,\s*|,?\s+and\s+/g).join(`<br>\n`)}\n\n\n`;
   a += headingMd(x, 'Research Area');
   a += headingMd(x, 'Type of Work');
   a += headingMd(x, 'Current State of work');
@@ -118,6 +118,7 @@ async function main(pth) {
   for (var i=0, I=urls.length; i<I; i++) {
     var id = String(i+1).padStart(2, '0');
     var body = await fetchBody(urls[i]);
+    if (!body.querySelector('#div1 h3')) continue;
     var x = readDetails(body);
     downloadFile(x.videoUrl, `${id}. ${x.title}`);
     downloadFile(x.posterImg, `${id}. ${x.title}`);
