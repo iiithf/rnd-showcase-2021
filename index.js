@@ -84,7 +84,7 @@ function detailsMd(x) {
   a += `[Poster](${x.posterUrl})\n`;
   a += `[Video](${x.videoUrl})\n\n<br>\n\n\n`;
   a += `### Faculty Name\n\n`
-  a += `${x['Faculty Name'].split(/,\s*/g).join(`<br>\n`)}\n\n\n`;
+  a += `${x['Faculty Name'].split(/,\s*|\s+and\s+/g).join(`<br>\n`)}\n\n\n`;
   a += headingMd(x, 'Research Area');
   a += headingMd(x, 'Type of Work');
   a += headingMd(x, 'Current State of work');
