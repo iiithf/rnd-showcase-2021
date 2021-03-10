@@ -130,8 +130,8 @@ async function main(pth) {
     var txtPth = `${id}. ${x.title}.log`;
 
     downloadFile(x.videoUrl, videoPth);
-    downloadFile(x.posterImgUrl, posterPth);
-    downloadFile(x.posterUrl, posterImgPth);
+    downloadFile(x.posterImgUrl, posterImgPth);
+    downloadFile(x.posterUrl, posterPth);
     // var a = await imgur.uploadFile(posterImgPth)
     // console.log(posterImgPth, a);
 
