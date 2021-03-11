@@ -8,6 +8,10 @@ const imgur = require('imgur');
 
 const E = process.env;
 const stdio = [0, 1, 2];
+const CSV_COLUMNS = [
+  'Center', 'Title', 'Faculty Name', 'Research Area', 'Type of Work',
+  'Current State of Work', 'Potential Applications', 'Keywords'
+];
 
 
 
@@ -110,16 +114,26 @@ function detailsTxt(x) {
 }
 
 
+function mergeCsv() {
+  var csv = CSV_COLUMNS.map(c => `"${c}"`).join()+'\n';
+  for (var d of fs.readdirSync('.', {withFileTypes: true})) {
+    if (!d.isDirectory()) continue;
+    if (!(/^[A-Z][A-Za-z]+$/.test(d.name))) continue;
+    var f = path.join(d.name, 'index.csv');
+    var rows = readFile(f).replace(/.*?\n/, '');
+    csv += rows;
+  }
+  writeFile('index.csv', csv);
+}
+
 
 async function main(pth) {
+  if (pth==='mergeCsv') return mergeCsv();
   var dir = path.dirname(pth);
   var urls = readFile(pth).trim().split('\n');
   var postfixTxt = readFile('postfix.txt');
   imgur.setCredentials(E.IMGUR_USERNAME, E.IMGUR_PASSWORD, E.IMGUR_CLIENTID);
-  var csv =
-    '"Center","Title","Faculty Name","Research Area",' +
-    '"Type of Work","Current State of work",' +
-    '"Potential Applications","Keywords"\n';
+  var csv = CSV_COLUMNS.map(c => `"${c}"`).join()+'\n';
   process.chdir(dir);
   for (var i=0, I=urls.length; i<I; i++) {
     var id = String(i+1).padStart(2, '0');
