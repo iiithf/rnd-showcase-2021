@@ -26,6 +26,16 @@ applied research that benefits society.
 
 [All Posters](https://photos.app.goo.gl/TBXrWQr6gU3wF3jv9)
 [All Videos](https://www.youtube.com/playlist?list=PLNEveYilIj1Bp5UolizUxNTDCLK6Ll1zK)
+[All Details](https://docs.google.com/spreadsheets/d/1aHXqqJmZ2CVH1NhG3bnqtoK4YR3qGeeRR5FbjohGZYo/edit?usp=sharing)
+
+<br>
+<br>
+
+
+### References
+
+- [IIITH R&D Showcase 2021](https://portal-rndshowcase.iiit.ac.in)
+
 
 [CBS]: CBS
 [CCNSB]: CCNSB
