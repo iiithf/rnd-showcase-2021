@@ -129,7 +129,7 @@ async function main(pth) {
     var mdPth = `${id}. ${x.title}.md`;
     var txtPth = `${id}. ${x.title}.log`;
 
-    downloadFile(x.videoUrl, videoPth);
+    // downloadFile(x.videoUrl, videoPth);
     downloadFile(x.posterImgUrl, posterImgPth);
     downloadFile(x.posterUrl, posterPth);
     // var a = await imgur.uploadFile(posterImgPth)
