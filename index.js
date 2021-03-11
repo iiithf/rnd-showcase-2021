@@ -114,6 +114,31 @@ function detailsTxt(x) {
 }
 
 
+function tableMd(dir) {
+  var urlpre = `https://github.com/iiithf/rnd-showcase-2021/blob/main/${dir}/`;
+  var table = '| S No. | Title | Poster | Video |\n|-|-|-|-|\n';
+  var tlinks = '', plinks = '', vlinks = '';
+  for (var f of fs.readdirSync(dir)) {
+    if (!(/^\d\d.*?.md$/.test(f))) continue;
+    var d = readFile(dir+'/'+f);
+    var sno = f.substring(0, 2);
+    var title = f.slice(3, -3).trim();
+    var m = d.match(/\[Poster\]\((.*?)\)/);
+    var poster = m? m[1] : '';
+    var m = d.match(/\[Video\]\((.*?)\)/);
+    var video = m? m[1] : '';
+    var plink = poster? `[P-${sno}]` : `*P-${sno}*`;
+    var vlink = video?  `[V-${sno}]` : `*V-${sno}*`;
+    table += `| [${sno}] | [${title}][${sno}] | ${plink} | ${vlink} |\n`;
+    tlinks += `[${sno}]: ${urlpre}${encodeURIComponent(f)}\n`;
+    if (poster) plinks += `[P-${sno}]: ${poster}\n`;
+    if (video)  vlinks += `[V-${sno}]: ${video}\n`;
+  }
+  var md = `${table}\n\n${tlinks}\n${plinks}\n${vlinks}\n`;
+  writeFile(`${dir}/index.md`, md);
+}
+
+
 function mergeCsv() {
   var csv = CSV_COLUMNS.map(c => `"${c}"`).join()+'\n';
   for (var d of fs.readdirSync('.', {withFileTypes: true})) {
@@ -129,6 +154,7 @@ function mergeCsv() {
 
 async function main(pth) {
   if (pth==='mergeCsv') return mergeCsv();
+  if (pth.startsWith('tableMd:')) return tableMd(pth.substring(8));
   var dir = path.dirname(pth);
   var urls = readFile(pth).trim().split('\n');
   var postfixTxt = readFile('postfix.txt');

@@ -2,6 +2,7 @@ R&D Showcase is an annual event that allows faculty and students to share
 their work with the public in keeping with IIITH's endeavor to promote
 applied research that benefits society.
 
+<br>
 
 | Center   | Name                                                 | Posters    | Videos     |
 | -------- | ---------------------------------------------------- | ---------- | ---------- |
@@ -24,15 +25,12 @@ applied research that benefits society.
 | [SERC]   | Software Engineering Research Center                 | [P-SERC]   | [V-SERC]   |
 | [SPCRC]  | Center for Comp. Natural Sciences and Bioinformatics | [P-SPCRC]  | [V-SPCRC]  |
 
-[All Posters](https://photos.app.goo.gl/TBXrWQr6gU3wF3jv9)
-[All Videos](https://www.youtube.com/playlist?list=PLNEveYilIj1Bp5UolizUxNTDCLK6Ll1zK)
-[All Details Sheets](https://docs.google.com/spreadsheets/d/1aHXqqJmZ2CVH1NhG3bnqtoK4YR3qGeeRR5FbjohGZYo/edit?usp=sharing)
-[All Details HTML](https://docs.google.com/spreadsheets/d/e/2PACX-1vRfTw6gjjnf_U9--jOXjDjt2SFlL9e4bdfYVygdkApDXzJ09pa7PtA69Pwo9hElboW3a8qZg6M4k01K/pubhtml)
+<br>
 
-
-<div style="margin:0px;padding:0px;overflow:hidden">
-  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRfTw6gjjnf_U9--jOXjDjt2SFlL9e4bdfYVygdkApDXzJ09pa7PtA69Pwo9hElboW3a8qZg6M4k01K/pubhtml?widget=true&amp;headers=false" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>
-</div>
+[All Posters](https://photos.app.goo.gl/TBXrWQr6gU3wF3jv9),
+[All Videos](https://www.youtube.com/playlist?list=PLNEveYilIj1Bp5UolizUxNTDCLK6Ll1zK),
+[All Details in CSV](https://github.com/iiithf/rnd-showcase-2021/blob/main/index.csv),
+[All Details in Sheets](https://docs.google.com/spreadsheets/d/1aHXqqJmZ2CVH1NhG3bnqtoK4YR3qGeeRR5FbjohGZYo/edit?usp=sharing)
 
 <br>
 <br>
