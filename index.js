@@ -116,6 +116,10 @@ async function main(pth) {
   var urls = readFile(pth).trim().split('\n');
   var postfixTxt = readFile('postfix.txt');
   imgur.setCredentials(E.IMGUR_USERNAME, E.IMGUR_PASSWORD, E.IMGUR_CLIENTID);
+  var csv =
+    '"Center","Title","Faculty Name","Research Area",' +
+    '"Type of Work","Current State of work",' +
+    '"Potential Applications","Keywords"\n';
   process.chdir(dir);
   for (var i=0, I=urls.length; i<I; i++) {
     var id = String(i+1).padStart(2, '0');
@@ -130,8 +134,8 @@ async function main(pth) {
     var txtPth = `${id}. ${x.title}.log`;
 
     // downloadFile(x.videoUrl, videoPth);
-    downloadFile(x.posterImgUrl, posterImgPth);
-    downloadFile(x.posterUrl, posterPth);
+    // downloadFile(x.posterImgUrl, posterImgPth);
+    // downloadFile(x.posterUrl, posterPth);
     // var a = await imgur.uploadFile(posterImgPth)
     // console.log(posterImgPth, a);
 
@@ -140,7 +144,14 @@ async function main(pth) {
     writeFile(mdPth, detailsMd(x));
     x.posterUrl = encodeURI(`https://github.com/iiithf/rnd-showcase-2021/blob/main/${dir}/${posterPth}`);
     writeFile(txtPth, detailsTxt(x)+postfixTxt);
+
+    var row =
+      `"${dir}","${x.title}","${x['Faculty Name']}","${x['Research Area']||''}",` +
+      `"${x['Type of Work']||''}","${x['Current State of work']||''}",` +
+      `"${x['Potential Applications']||''}","${x['Keywords']||''}"`;
+    csv += row.replace(/[\r\n\s]+/g, ' ').trim()+'\n';
     console.log('\n\n');
   }
+  writeFile(`index.csv`, csv);
 }
 main(process.argv[2]);
