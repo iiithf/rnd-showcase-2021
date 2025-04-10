@@ -40,6 +40,7 @@ applied research that benefits society.
 
 - [IIITH R&D Showcase 2021](https://portal-rndshowcase.iiit.ac.in)
 
+![](https://ga-beacon.deno.dev/G-4FTHWYCNMC:Ze0vK3cdTmSz-bzSssU1-Q/github.com/iiithf/rnd-showcase-2021)
 
 [CBS]: CBS
 [CCNSB]: CCNSB
